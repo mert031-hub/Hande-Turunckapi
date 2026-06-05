@@ -157,7 +157,7 @@ export default function Navbar() {
                 WhatsApp ile Randevu Al
               </a>
               <a
-                href="tel:05343675775"
+                href="tel:+905343675775"
                 onClick={() => setMenuOpen(false)}
                 className="mt-3 block w-full text-center py-4 rounded-2xl border-2 border-[#D9CCB9] text-[#6B4C38] font-semibold text-base hover:border-[#7A9C75] transition-colors"
               >

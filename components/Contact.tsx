@@ -30,11 +30,11 @@ export default function Contact() {
             İletişim
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-            Bir Adım Atın
+            İletişime Geçin
           </h2>
           <p className="text-white/60 max-w-lg mx-auto leading-relaxed">
-            Sormak istediğiniz her şey için, randevu almak veya bilgi edinmek için
-            iletişime geçebilirsiniz. Size dönmekten memnuniyet duyarım.
+            Aklınızdaki soruları sormak ya da randevu almak için istediğiniz
+            kanaldan ulaşabilirsiniz. Mesajınıza en kısa sürede dönmeye çalışırım.
           </p>
         </motion.div>
 
@@ -68,7 +68,7 @@ export default function Contact() {
 
             {/* Phone */}
             <a
-              href="tel:05343675775"
+              href="tel:+905343675775"
               className="group flex items-center gap-4 p-5 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-200"
             >
               <div className="w-12 h-12 rounded-xl bg-[#7A9C75] flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">

@@ -13,6 +13,8 @@ import {
   Heart,
   ClipboardList,
   Smile,
+  Layers,
+  RefreshCw,
 } from "lucide-react";
 
 // Image mapping — replace filenames as needed
@@ -79,14 +81,14 @@ const specializedApproaches = [
     accent: "text-[#C17D5F]",
   },
   {
-    icon: Brain,
+    icon: Layers,
     title: "Bilişsel Davranışçı Terapi",
     desc: "Düşünce ve davranış örüntülerini dönüştürerek duygusal iyilik haline katkıda bulunur.",
     color: "bg-[#E8F0E7]",
     accent: "text-[#5C7A58]",
   },
   {
-    icon: Heart,
+    icon: RefreshCw,
     title: "Çözüm Odaklı Terapi",
     desc: "Sorunlara değil çözümlere odaklanarak kişinin kendi kaynaklarını harekete geçirir.",
     color: "bg-[#F0EBE3]",
@@ -146,11 +148,11 @@ export default function Services() {
             Hizmetler
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-[#3D2B1F] mb-4">
-            Size Özel Terapi Hizmetleri
+            Nereden Başlayacağınızı<br className="hidden sm:block" /> Birlikte Buluruz
           </h2>
           <p className="text-[#6B4C38] max-w-xl mx-auto leading-relaxed">
-            Her bireyin ihtiyacı farklıdır. Sizi en iyi destekleyecek yaklaşımı
-            birlikte belirleriz.
+            Hangi konuda destek istediğinizi bilmiyor olmanız sorun değil.
+            İlk görüşmede birlikte değerlendiririz.
           </p>
         </motion.div>
 
@@ -175,7 +177,7 @@ export default function Services() {
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#3D2B1F]/80 via-[#3D2B1F]/30 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#3D2B1F]/90 via-[#3D2B1F]/50 to-transparent" />
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-5">
                 <div className="flex items-center gap-2 mb-2">

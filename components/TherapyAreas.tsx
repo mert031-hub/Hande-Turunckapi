@@ -75,11 +75,11 @@ export default function TherapyAreas() {
             Terapi Alanları
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-[#3D2B1F] mb-4">
-            Uzmanlık Alanlarım
+            Her Hikâye Farklıdır,<br className="hidden sm:block" /> Her Süreç de
           </h2>
           <p className="text-[#6B4C38] max-w-lg mx-auto leading-relaxed">
-            Her yaş grubuna ve ihtiyaca yönelik kanıta dayalı terapi yaklaşımları
-            ile yanınızdayım.
+            Çocuğunuzun oyun odasından yetişkin bireysel seanslarına —
+            her yaş grubuna ve ihtiyaca özel yaklaşımla yanınızdayım.
           </p>
         </motion.div>
 
@@ -102,7 +102,7 @@ export default function TherapyAreas() {
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
                 sizes="(max-width: 1024px) 100vw, 66vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#3D2B1F]/85 via-[#3D2B1F]/40 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#3D2B1F]/90 via-[#3D2B1F]/50 to-transparent" />
             </div>
             <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
               <span className="inline-block px-3 py-1 rounded-full bg-[#7A9C75]/80 backdrop-blur-sm text-xs font-medium text-white mb-3">
@@ -134,7 +134,7 @@ export default function TherapyAreas() {
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
                 sizes="(max-width: 1024px) 100vw, 33vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#3D2B1F]/85 via-[#3D2B1F]/40 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#3D2B1F]/90 via-[#3D2B1F]/50 to-transparent" />
             </div>
             <div className="absolute bottom-0 left-0 right-0 p-5">
               <span className="inline-block px-3 py-1 rounded-full bg-[#C17D5F]/80 backdrop-blur-sm text-xs font-medium text-white mb-3">
@@ -146,39 +146,46 @@ export default function TherapyAreas() {
           </motion.div>
         </div>
 
-        {/* Remaining cards grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
-          {areas.slice(2).map((area, i) => (
-            <motion.div
-              key={area.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              whileHover={{ y: -4 }}
-              className={`group relative rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 cursor-default ${
-                i === 0 || i === 4 ? "lg:col-span-2" : "lg:col-span-1"
-              }`}
-            >
-              <div className="relative h-56 sm:h-60">
-                <Image
-                  src={area.image}
-                  alt={area.title}
-                  fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#3D2B1F]/85 via-[#3D2B1F]/30 to-transparent" />
-              </div>
-              <div className="absolute bottom-0 left-0 right-0 p-4">
-                <span className="inline-block px-2.5 py-0.5 rounded-full bg-white/20 backdrop-blur-sm text-xs font-medium text-white/90 mb-2">
-                  {area.tag}
-                </span>
-                <h3 className="text-base font-bold text-white mb-1">{area.title}</h3>
-                <p className="text-xs text-white/75 leading-relaxed line-clamp-2">{area.desc}</p>
-              </div>
-            </motion.div>
-          ))}
+        {/* Remaining cards grid — 4-col layout, balanced spans */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {areas.slice(2).map((area, i) => {
+            // Row 1: span-2, span-1, span-1  → Row 2: span-2, span-2
+            const spanClass =
+              i === 0 ? "lg:col-span-2" :
+              i === 1 ? "lg:col-span-1" :
+              i === 2 ? "lg:col-span-1" :
+              i === 3 ? "lg:col-span-2" :
+              "lg:col-span-2";
+            return (
+              <motion.div
+                key={area.title}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                whileHover={{ y: -4 }}
+                className={`group relative rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 cursor-default ${spanClass}`}
+              >
+                <div className="relative h-52 sm:h-60">
+                  <Image
+                    src={area.image}
+                    alt={area.title}
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#3D2B1F]/90 via-[#3D2B1F]/50 to-transparent" />
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 p-4">
+                  <span className="inline-block px-2.5 py-0.5 rounded-full bg-white/20 backdrop-blur-sm text-xs font-medium text-white/90 mb-2">
+                    {area.tag}
+                  </span>
+                  <h3 className="text-base font-bold text-white mb-1">{area.title}</h3>
+                  <p className="text-xs text-white/75 leading-relaxed line-clamp-2">{area.desc}</p>
+                </div>
+              </motion.div>
+            );
+          })}
         </div>
 
         {/* CTA */}

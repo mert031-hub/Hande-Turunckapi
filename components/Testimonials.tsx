@@ -70,11 +70,11 @@ export default function Testimonials() {
             Danışan Deneyimleri
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-[#3D2B1F] mb-4">
-            Yorumlar
+            Danışanlarımın Sözleriyle
           </h2>
           <p className="text-[#6B4C38] max-w-lg mx-auto leading-relaxed">
-            Danışanlarımın kendi ifadelerinden bir seçki. Her terapi yolculuğu
-            kişiye özeldir ve yüzde yüz bireyseldir.
+            Aşağıdaki yorumlar gerçek danışan deneyimlerinden alınmıştır.
+            Her terapi süreci kişiye özeldir.
           </p>
         </motion.div>
 

@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 const stats = [
   { value: "4+", label: "Yıllık Klinik Deneyim" },
-  { value: "3", label: "Terapi Yaklaşımı" },
-  { value: "∞", label: "Online Terapi Seansı" },
+  { value: "3", label: "Temel Terapi Yaklaşımı" },
+  { value: "Yüz Yüze & Online", label: "Seans Seçeneği" },
   { value: "100%", label: "Gizlilik Güvencesi" },
 ];
 
@@ -23,7 +23,7 @@ export default function StatsStrip() {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="text-center"
             >
-              <p className="text-3xl sm:text-4xl font-bold text-white mb-1">{stat.value}</p>
+              <p className="text-2xl sm:text-3xl font-bold text-white mb-1 leading-tight">{stat.value}</p>
               <p className="text-white/75 text-sm leading-tight">{stat.label}</p>
             </motion.div>
           ))}

@@ -55,7 +55,7 @@ export default function About() {
             Hakkımda
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-[#3D2B1F] leading-tight">
-            Sizi Tanımak İçin Buradayım
+            Klinik Psikolog olarak<br className="hidden sm:block" /> yanınızdayım
           </h2>
         </motion.div>
 
@@ -84,7 +84,7 @@ export default function About() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="absolute -bottom-5 -right-4 sm:-right-6 w-40 sm:w-48 rounded-xl overflow-hidden shadow-2xl border-4 border-[#FAF7F2]"
+              className="absolute -bottom-5 -right-4 sm:-right-6 w-40 sm:w-48 rounded-xl overflow-hidden shadow-2xl border-4 border-[#FAF7F2] hidden sm:block"
             >
               <div className="relative aspect-[4/3]">
                 <Image
@@ -102,7 +102,7 @@ export default function About() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.4 }}
-              className="absolute -top-4 -left-4 sm:-left-6 bg-[#7A9C75] text-white rounded-2xl px-4 py-3 shadow-lg"
+              className="absolute -top-4 -left-4 sm:-left-6 bg-[#7A9C75] text-white rounded-2xl px-4 py-3 shadow-lg hidden sm:block"
             >
               <p className="text-2xl font-bold leading-none">4+</p>
               <p className="text-xs font-medium mt-0.5 opacity-90">Yıllık Deneyim</p>
@@ -168,7 +168,7 @@ export default function About() {
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true }}
-                  className="p-4 rounded-xl bg-white border border-[#E8DDD0] hover:border-[#A8C4A3] hover:shadow-md transition-all duration-200"
+                  className="p-4 rounded-xl bg-white border border-[#E8DDD0] border-l-[3px] border-l-[#A8C4A3] hover:shadow-md transition-all duration-200"
                 >
                   <item.icon className="w-5 h-5 text-[#7A9C75] mb-2" />
                   <p className="text-sm font-semibold text-[#3D2B1F] mb-1">{item.title}</p>

@@ -14,7 +14,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#2C1F15] border-t border-white/5 pt-14 pb-8">
+    <footer className="bg-[#2C1F15] border-t border-white/5 pt-14 pb-20 sm:pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
@@ -52,7 +52,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="tel:05343675775"
+                href="tel:+905343675775"
                 className="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
                 aria-label="Telefon"
               >
@@ -89,7 +89,7 @@ export default function Footer() {
             <h4 className="text-white font-semibold text-sm mb-4">İletişim</h4>
             <div className="space-y-3">
               <a
-                href="tel:05343675775"
+                href="tel:+905343675775"
                 className="flex items-center gap-2.5 text-white/50 hover:text-white/80 text-sm transition-colors"
               >
                 <Phone className="w-3.5 h-3.5 flex-shrink-0" />
