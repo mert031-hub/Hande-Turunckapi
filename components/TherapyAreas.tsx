@@ -5,13 +5,13 @@ import Image from "next/image";
 
 // Image mapping
 const AREA_IMAGES = {
-  child: "/images/cocukdanis.jpg",
+  child: "/images/cocukergenterapi.jpg",
   adolescent: "/images/ergen.jpg",
-  adult: "/images/yetiskindanis.jpg",
-  emdr: "/images/photo1.jpg",
-  cbt: "/images/beklemeodasi2.jpg",
+  adult: "/images/bireyselterapi2.webp",
+  emdr: "/images/emdr.jpg",
+  cbt: "/images/bdt.jpg",
   play: "/images/oyunterapisi2.jpg",
-  online: "/images/oyunodasi2.jpg",
+  online: "/images/onlinedanis.png",
 };
 
 const areas = [

@@ -19,12 +19,12 @@ import {
 
 // Image mapping — replace filenames as needed
 const SERVICE_IMAGES = {
-  online: "/images/oyunodasi.jpg",
-  bireysel: "/images/yetiskindanis.jpg",
-  cocuk: "/images/cocukdanis.jpg",
-  aile: "/images/ailedanis.jpg",
+  online: "/images/onlineterapi.jpg",
+  bireysel: "/images/bireyselterapi2.webp",
+  cocuk: "/images/cocukergenterapi.jpg",
+  aile: "/images/Annebabaegitim copy.jpg",
   oyun: "/images/oyunterapisi.jpg",
-  test: "/images/test.jpg",
+  test: "/images/onlinedanis.png",
 };
 
 const mainServices = [
@@ -65,7 +65,7 @@ const mainServices = [
   },
   {
     id: "danismanlik",
-    image: SERVICE_IMAGES.bireysel,
+    image: SERVICE_IMAGES.test,
     icon: MessageCircle,
     title: "Online Danışmanlık",
     desc: "Kısa süreli, çözüm odaklı online danışmanlık görüşmeleri.",

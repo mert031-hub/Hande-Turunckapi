@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const HERO_IMAGE = "/images/beklemeodasi2.jpg";
+const HERO_IMAGE = "/images/ailedanis.webp";
 
 const badges = [
   "Klinik Psikolog",

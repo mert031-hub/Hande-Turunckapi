@@ -5,7 +5,7 @@ import Image from "next/image";
 import { GraduationCap, Clock, Heart, Award } from "lucide-react";
 
 const ABOUT_IMAGE = "/images/HocaPp.jpg";
-const OFFICE_IMAGE = "/images/beklemeodasi.jpg";
+const OFFICE_IMAGE = "/images/Annebabaegitim.jpg";
 
 const credentials = [
   {
